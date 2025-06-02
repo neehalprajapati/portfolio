@@ -1,0 +1,79 @@
+.contact-container {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.contact-title {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #6f00ff, #00e0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #00e0ff;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.contact-socials a {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.contact-socials a:hover {
+  color: #6f00ff;
+}
+
+.contact-buttons {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.back-home-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #6f00ff, #00e0ff);
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.back-home-button:hover {
+  background: linear-gradient(90deg, #00e0ff, #6f00ff);
+}
