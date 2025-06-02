@@ -4,7 +4,7 @@ import About from './Pages/About/About';
 import Mywork from './Pages/Mywork/Mywork';
 import Contact from './Pages/Contact/Contact';
 import '../src/App.css'
-import Cursor from './components/cursor/Cursor';
+import Cursor from './components/Cursor/Cursor';
 
 function App() {
   return (
