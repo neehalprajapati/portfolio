@@ -20,6 +20,7 @@
   font-size: 1.2rem;
   color: #b0b0b0;
   margin-bottom: 40px;
+  line-height: 1.6;
 }
 
 .contact-info {
@@ -35,6 +36,9 @@
   gap: 15px;
   font-size: 1.1rem;
   color: #ffffff;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
 }
 
 .contact-icon {
@@ -44,6 +48,8 @@
 
 .contact-socials {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   margin-top: 25px;
 }
@@ -51,11 +57,12 @@
 .contact-socials a {
   color: #fff;
   font-size: 1.8rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-socials a:hover {
   color: #6f00ff;
+  transform: scale(1.2);
 }
 
 .contact-buttons {
@@ -71,9 +78,65 @@
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .back-home-button:hover {
   background: linear-gradient(90deg, #00e0ff, #6f00ff);
+  transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-description {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .contact-item {
+    font-size: 1rem;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .contact-socials {
+    gap: 18px;
+  }
+
+  .back-home-button {
+    font-size: 0.95rem;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.9rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.95rem;
+  }
+
+  .contact-socials a {
+    font-size: 1.5rem;
+  }
+
+  .back-home-button {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }

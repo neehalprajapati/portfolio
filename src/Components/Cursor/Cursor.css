@@ -1,10 +1,7 @@
 /* Cursor.css */
 
 /* Hide default cursor globally */
-body,
-* {
-  cursor: none !important;
-}
+
 
 /* Outer Cursor */
 .cursor-outer {
