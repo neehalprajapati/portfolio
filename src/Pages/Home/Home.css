@@ -426,4 +426,8 @@ body {
   .arc-card-container {
     display: none;
   }
+
+  .intro-vertical-line {
+    display: none;
+  }
 }
