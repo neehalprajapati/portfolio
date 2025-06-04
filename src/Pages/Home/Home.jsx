@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import Typewriter from 'typewriter-effect';
 import './Home.css'
 import { useState } from 'react';
@@ -33,7 +34,7 @@ const Home = () => {
             <FaFacebookF />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/neehal_prajapati_11"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -41,7 +42,7 @@ const Home = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/neehalprajapati"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -56,6 +57,15 @@ const Home = () => {
           >
             <FaLinkedinIn />
           </a>
+          <a
+            href="https://x.com/NeehalPrajapati"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaXTwitter />
+          </a>
+
         </div>
 
         <div className="intro-vertical-line" />
