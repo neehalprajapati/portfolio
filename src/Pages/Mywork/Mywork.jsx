@@ -5,6 +5,13 @@ import img1 from '../../assets/image/image1.png';
 import img2 from '../../assets/image/image2.png';
 import img3 from '../../assets/image/image3.png';
 import img4 from '../../assets/image/image4.png';
+import pot1 from '../../assets/image/pot1.png';
+import pot2 from '../../assets/image/pot2.png';
+import pot3 from '../../assets/image/pot3.png';
+import pot4 from '../../assets/image/pot4.png';
+import pot5 from '../../assets/image/pot5.png';
+import pot6 from '../../assets/image/pot6.png';
+import pot7 from '../../assets/image/pot7.png';
 
 const largeProjects = [
   {
@@ -13,41 +20,18 @@ const largeProjects = [
     shortDesc: 'MERN STACK Project',
     detailedDesc: "This Event Management System is a full-stack web application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and integrated with Cloudinary for efficient image processing. The platform enables users to seamlessly book multiple event services such as catering, decoration, hall rentals, and more, through a unified interface. It features separate login portals for users and service providers, ensuring secure, role-based access. Users can register, browse services, and manage bookings, while service providers can log in to add, edit, or delete their offerings, upload service images via Cloudinary, and manage incoming bookings. The system employs JWT-based authentication and delivers a smooth and responsive experience for organizing events end-to-end.",
     images: [img1, img2, img3, img4],
-    link: 'https://github.com/yourusername/event-ease',
+    link: 'https://github.com/neehalprajapati/EventEase',
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Cloudinary']
   },
   {
     id: 2,
-    title: 'Portfolio with Animations',
-    shortDesc: 'Interactive portfolio website',
-    detailedDesc: 'A custom portfolio website built with React featuring smooth animations and transitions using Framer Motion. The site showcases my projects with interactive elements and a responsive design that works across all device sizes. Includes a dark/light mode toggle and optimized performance for fast loading times.',
-    images: [
-      '/images/project2-1.png',
-      '/images/project2-2.png',
+    title: 'Pottery Website (E-commerce Website)',
+    shortDesc: 'A buying platform of Potteries items which are made from clay',
+    detailedDesc: 'Pottery Hub is a fully responsive e-commerce platform designed for users to browse, explore, and purchase a variety of handcrafted clay products such as pots, matkas, diyas, vases, and other traditional pottery items. The website offers a clean and intuitive user interface, making it easy for customers to search, filter, and order products directly from skilled artisans. Developed using React.js, JavaScript, HTML, CSS, and Bootstrap, the site ensures fast performance, smooth navigation, and compatibility across all devices. With a modern frontend and an organized product catalog, Pottery Hub aims to support local craftsmen by providing them an online presence while delivering a seamless shopping experience to users.',
+    images: [pot1, pot2, pot3, pot4, pot5, pot6, pot7
     ],
-    link: 'https://github.com/yourusername/animated-portfolio',
-    technologies: ['React', 'Framer Motion', 'Styled Components']
-  },
-];
-
-const miniProjects = [
-  {
-    id: 3,
-    title: 'JavaScript Stopwatch',
-    shortDesc: 'A functional stopwatch app',
-    detailedDesc: 'A simple stopwatch application built with vanilla JavaScript featuring start, pause, reset, and lap time functionality. The UI updates in real-time and stores lap times in memory until reset. Clean, minimalist design with responsive layout.',
-    images: ['/images/mini1.png'],
-    link: 'https://github.com/yourusername/js-stopwatch',
-    technologies: ['JavaScript', 'HTML', 'CSS']
-  },
-  {
-    id: 4,
-    title: 'CSS Image Slider',
-    shortDesc: 'No-JS image slider',
-    detailedDesc: 'An automatic image slider created using only HTML and CSS with no JavaScript required. Utilizes CSS animations and the :target pseudo-class to create smooth transitions between slides. Fully responsive and works on mobile devices.',
-    images: ['/images/mini2.png'],
-    link: 'https://github.com/yourusername/css-slider',
-    technologies: ['HTML', 'CSS']
+    link: 'https://github.com/neehalprajapati/Pottery-Website',
+    technologies: ['React', 'HTML', 'CSS', 'BootStrap', 'JavaScript']
   },
 ];
 
@@ -139,9 +123,6 @@ const Mywork = () => {
 
       <h3 className="subsection-title">Featured Projects</h3>
       {renderProjects(largeProjects)}
-
-      <h3 className="subsection-title">Mini Projects</h3>
-      {renderProjects(miniProjects)}
 
       {selectedProject && (
         <div className="modal-overlay" onClick={closeProject} role="dialog" aria-modal="true">
